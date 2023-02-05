@@ -40,5 +40,7 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3(-11.3f, transform.position.y, 0);
         }
+
+        
     }
 }
