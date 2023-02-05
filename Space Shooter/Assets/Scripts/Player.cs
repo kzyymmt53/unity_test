@@ -24,12 +24,12 @@ public class Player : MonoBehaviour
     void Update()
     {
         CalculateMovement();
-
         if(Input.GetKeyDown(KeyCode.Space) && Time.time > _canFire)
         {
-            _canFire = Time.time + _fireRate;
-            Instantiate(_laserPrefab, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
+            ShootLaser();
         }
+
+        
     }
 
     void CalculateMovement()
@@ -54,5 +54,13 @@ public class Player : MonoBehaviour
         }
 
         
+    }
+
+    void ShootLaser() 
+    {
+        
+        _canFire = Time.time + _fireRate;
+        Instantiate(_laserPrefab, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
+    
     }
 }
