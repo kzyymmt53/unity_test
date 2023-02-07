@@ -6404,3 +6404,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2724.913694 seconds.
+  path: Assets/Materials 1
+  artifactKey: Guid(de54f36bef6934ee0a218f2f84b2a2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials 1 using Guid(de54f36bef6934ee0a218f2f84b2a2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1367f03a235f936da69e9eaf67ab5c21') in 0.070744 seconds 
