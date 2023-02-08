@@ -29,12 +29,18 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject _shieldsVisualizer;
 
+    [SerializeField]
+    private int _score;
+
+    private UIManager _uiManager;
+
     // Start is called before the first frame update
     void Start()
     {
         //現在のポジションを (0,0,0)にする
         transform.position = new Vector3(0, 0, 0);
         _spawnManager = GameObject.Find("Spawn Manager").GetComponent<SpawnManager>();
+        _uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
 
         if(_spawnManager == null)
         {
@@ -141,5 +147,10 @@ public class Player : MonoBehaviour
     public void ShieldsActive() {
         _isShieldsActive = true;
         _shieldsVisualizer.SetActive(true);
+    }
+
+    public void AddScore(int points){
+        _score += points;
+        _uiManager.UpdateScore(_score);
     }
 }
