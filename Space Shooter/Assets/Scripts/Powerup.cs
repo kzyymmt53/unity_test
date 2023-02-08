@@ -40,7 +40,7 @@ public class Powerup : MonoBehaviour
                         player.SpeedBoostActive();
                         break;
                     case 2:
-                        Debug.Log("BBB");
+                        player.ShieldsActive();
                         break;
                     default:
                         Debug.Log("CCC");
