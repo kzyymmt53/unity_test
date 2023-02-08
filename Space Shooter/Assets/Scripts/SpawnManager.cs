@@ -8,12 +8,15 @@ public class SpawnManager : MonoBehaviour
     private GameObject _enemyPrefab;
     [SerializeField]
     private GameObject _enemyContainer;
+    [SerializeField]
+    private GameObject _tripleShotPowerupPrefab;
 
     private bool _stopSpawning = false;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnRoutine());
+        StartCoroutine(SpawnEnemyRoutine());
+        StartCoroutine(SpawnPowerupRoutine());
     }
 
     // Update is called once per frame
@@ -23,7 +26,7 @@ public class SpawnManager : MonoBehaviour
     }
 
     //5行ごとに敵を生成するために
-    IEnumerator SpawnRoutine() 
+    IEnumerator SpawnEnemyRoutine() 
     {
         //yield return null; // 1フレームまつ
 
@@ -41,5 +44,15 @@ public class SpawnManager : MonoBehaviour
     public void OnPlayerDeath() 
     {
         _stopSpawning = true;
+    }
+
+    IEnumerator SpawnPowerupRoutine()
+    {
+        while(_stopSpawning == false)
+        {
+            Vector3 postToSpawn = new Vector3(Random.Range(-8f, 8f), 7, 0);
+            Instantiate(_tripleShotPowerupPrefab, postToSpawn, Quaternion.identity);
+            yield return new WaitForSeconds(Random.Range(3,8));
+        }
     }
 }

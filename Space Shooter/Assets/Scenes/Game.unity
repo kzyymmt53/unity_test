@@ -207,6 +207,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &890145357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4872617616708247549, guid: a4e5ef7127679469d87abd45c9f00744, type: 3}
+  m_PrefabInstance: {fileID: 4872617615987185072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &890145363
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890145357}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dd79f23eace74b43860289780138eea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1052359322
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 4207663677959472950, guid: 94cb86c1c98044125b9d068f908f3c54, type: 3}
   _enemyContainer: {fileID: 1751290773}
+  _tripleShotPowerupPrefab: {fileID: 4872617616708247549, guid: a4e5ef7127679469d87abd45c9f00744, type: 3}
 --- !u!4 &1364864294
 Transform:
   m_ObjectHideFlags: 0
@@ -606,11 +632,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4872617616708247521, guid: a4e5ef7127679469d87abd45c9f00744, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.055
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 4872617616708247521, guid: a4e5ef7127679469d87abd45c9f00744, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.108
+      value: 5.31
       objectReference: {fileID: 0}
     - target: {fileID: 4872617616708247521, guid: a4e5ef7127679469d87abd45c9f00744, type: 3}
       propertyPath: m_LocalPosition.z
