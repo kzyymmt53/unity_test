@@ -1323,10 +1323,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2835105633877389954, guid: e05ba098552ba4eb8a1ae5d63e987931, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 1979602445371120115, guid: e05ba098552ba4eb8a1ae5d63e987931, type: 3}
+      propertyPath: _explosionPrefab
+      value: 
+      objectReference: {fileID: 3827518043649723768, guid: 92fb88423718f4b19b42fc65313154e8, type: 3}
     - target: {fileID: 4387749950513270286, guid: e05ba098552ba4eb8a1ae5d63e987931, type: 3}
       propertyPath: m_Name
       value: Asteroid
@@ -1377,21 +1377,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e05ba098552ba4eb8a1ae5d63e987931, type: 3}
---- !u!1 &1979602445371120114 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4387749950513270286, guid: e05ba098552ba4eb8a1ae5d63e987931, type: 3}
-  m_PrefabInstance: {fileID: 1979602445371120113}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1979602445371120115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979602445371120114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c715082c051c469c80e9724c6d67975, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotateSpeed: 3
