@@ -44,6 +44,7 @@
      <Compile Include="Assets/Scripts/UIManager.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
      <Compile Include="Assets/Scripts/Main_Menu/MainMenu.cs" />
+     <Compile Include="Assets/Scripts/Asteroid.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
