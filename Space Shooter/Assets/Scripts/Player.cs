@@ -21,8 +21,7 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private bool _isTripleShotActive = false;
-    [SerializeField]
-    private bool _isSpeedBoostActive = false;
+
     [SerializeField]
     private bool _isShieldsActive = false;
 
@@ -31,6 +30,8 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private GameObject _rightEngine, _leftEngine;
+
+    private bool _isSpeedBoostActive = false;
    
 
     [SerializeField]
